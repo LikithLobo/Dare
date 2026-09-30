@@ -15,9 +15,9 @@
 <meta property="og:url" content="https://likithlobo.github.io/Dare/index.html">
 <meta name="twitter:card" content="summary_large_image">
 <style>
-
 *{box-sizing:border-box}
-html{background:#1b2a49}body{margin:0;min-height:100%;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#1b2a49;color:#1b2a49;line-height:1.55}
+html{background:#1b2a49}
+body{margin:0;min-height:100%;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#1b2a49;color:#1b2a49;line-height:1.55}
 .wrap{max-width:560px;margin:0 auto;padding:20px 16px 60px}
 h1,h2{font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif;line-height:1.05;margin:0}
 .mail{background-color:#fbfbff;color:#1b2a49;border-radius:14px;overflow:hidden;box-shadow:0 8px 0 rgba(0,0,0,.25)}
@@ -34,3 +34,46 @@ h2{font-size:1.5rem;font-weight:800;margin-bottom:12px}
 .fill{height:100%;width:0;background:#ff6b8b;transition:width .7s cubic-bezier(.2,1.4,.4,1)}
 .pct{font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif;font-weight:800;font-size:1.3rem;margin:10px 0 2px}
 .quip{min-height:1.6em;color:#5b6784;margin:0 0 12px}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="mail">
+    <div class="bar">
+      <b>From:</b> Likki &nbsp;&bull;&nbsp; <b>To:</b> Renu &nbsp;&bull;&nbsp; <b>Subject:</b> Auto-reply
+    </div>
+    
+    <div class="body">
+      <h1>I will <s>NOT</s> miss you</h1>
+      <p class="lead">Okay, maybe just a little bit. But don't let it get to your head.</p>
+      
+      <section>
+        <h2>Current Missing You Levels</h2>
+        <div class="card">
+          <div class="meter">
+            <div class="fill" id="progress-bar"></div>
+          </div>
+          <div class="pct">95%</div>
+          <div class="quip">Calculating exactly how boring things will be without you...</div>
+        </div>
+      </section>
+
+      <section>
+        <p>Good luck with everything ahead. Keep in touch, or else I'll have to send more of these automated messages.</p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script>
+  // This script triggers the bouncy CSS transition animation you set up for the .fill bar
+  window.onload = () => {
+    setTimeout(() => {
+      document.getElementById('progress-bar').style.width = '95%';
+    }, 300); // Waits 300ms after load, then animates the bar to 95%
+  };
+</script>
+
+</body>
+</html>
